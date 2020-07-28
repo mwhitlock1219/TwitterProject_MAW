@@ -46,4 +46,7 @@ public class Tweet {
     @CreationTimestamp
     private Date createdAt;
 
+	public void setUser(User user2) {
+	}
+
 }
