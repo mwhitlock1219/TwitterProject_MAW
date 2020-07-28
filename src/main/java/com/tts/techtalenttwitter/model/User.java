@@ -1,7 +1,6 @@
 package com.tts.techtalenttwitter.model;
 
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -77,22 +76,5 @@ public class User {
 
     @ManyToMany(mappedBy = "followers")
     private List<User> following;
-
-	public CharSequence getPassword() {
-		return null;
-	}
-
-	public void setPassword(String encode) {
-	}
-
-	public void setActive(int i) {
-	}
-
-	public void setRoles(HashSet<Role> hashSet) {
-	}
-
-	public String getUsername() {
-		return null;
-	}
 
 }
