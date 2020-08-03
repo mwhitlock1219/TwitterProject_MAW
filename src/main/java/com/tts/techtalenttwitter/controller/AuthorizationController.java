@@ -14,17 +14,17 @@ import com.tts.techtalenttwitter.service.UserService;
 
 @Controller
 public class AuthorizationController {
-	
-	@Autowired
+
+    @Autowired
     private UserService userService;
 
-    @GetMapping(value="/login")
-    public String login(){
+    @GetMapping(value = "/login")
+    public String login() {
         return "login";
     }
-    
-    @GetMapping(value="/signup")
-    public String registration(Model model){
+
+    @GetMapping(value = "/signup")
+    public String registration(Model model) {
         User user = new User();
         model.addAttribute("user", user);
         return "registration";
